@@ -144,3 +144,41 @@
 // console.log(objLiteral.brand);
 // console.log(objNew.brand);
 // console.log(objCreateMethod.brand);
+
+// class ObjClass {
+//   constructor(ram, ssd) {
+//     this.brand = "HP";
+//     this.ram = ram;
+//     this.ssd = ssd;
+//   }
+
+//   displaySpecification = function () {
+//     console.log(
+//       `Brand name: ${this.brand}, Ram: ${this.ram}, SSD: ${this.ssd}`
+//     );
+//   };
+// }
+
+function ObjFunction(brand = "HP", ram, ssd) {
+  this.brand = brand;
+  this.ram = ram;
+  this.ssd = ssd;
+}
+
+ObjFunction.prototype.displaySpecification = function () {
+  console.log(`Brand name: ${this.brand}, Ram: ${this.ram}, SSD: ${this.ssd}`);
+};
+
+// function ObjConstructor(ram, ssd) {
+//   this.brand = "HP";
+//   this.ram = ram;
+//   this.ssd = ssd;
+//   this.displaySpecification = function () {
+//     console.log(
+//       `Brand name: ${this.brand}, Ram: ${this.ram}, SSD: ${this.ssd}`
+//     );
+//   };
+// }
+
+let instanceFunction = new ObjFunction("Lenevo", 24, 1024);
+instanceFunction.displaySpecification();

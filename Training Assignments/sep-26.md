@@ -17,6 +17,7 @@ copy2.y.z = 100;
 console.log(obj.y.z);
 // Predict the output?
 Output: 50;
+Reason: Because spread operator makes shallow copy of the original one.
 ```
 
 ---
@@ -29,6 +30,7 @@ const [a=1, b=2, c=3] = nums;
 console.log(a, b, c);
 // What will be logged?
 Output: 5 2 3
+Reason: Because nums only have one value and we already set default value for all destructured elements.
 ```
 
 ---
@@ -41,6 +43,7 @@ const { id, name, grade="A" } = student;
 console.log(id, name, grade);
 // What is grade value?
 Output: 1 Ravi A
+Reason: Because we not passed third parameter and set default value to third destructured element so it takes default one.
 ```
 
 ---
@@ -77,6 +80,7 @@ Output: 1 Ravi A
 console.log("  hello world  ".trim().toUpperCase().slice(0, 5));
 // What will be the output?
 Output: HELLO;
+Reason: trim method removes start and end white spaces then convert it to upper case then in the last slice return the sliced string from index 0 to 4 because end is explecite.
 ```
 
 ---
@@ -99,6 +103,7 @@ dog.speak();
 
 - What will be logged?
   Output: Dog makes a sound
+  Reason: Because here we create instance of Animal and assigned it to dog by passingDog string in parameter. 'Dog' now set to this.type that mean when we call dog.speak() it says that take this.type from dog instance instead of Animal.
 
 - Add another method `eat()` in prototype that logs `"Dog is eating"` and call it.
   Answer:
@@ -129,6 +134,7 @@ greetFn();
 
 - Fix it using `.bind()`.
   Answer:greetFn.bind(person)();
+  Reason: Here bind method is binding person object to this that means now this referce to person object and call that function directly.
 
 ---
 
