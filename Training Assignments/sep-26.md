@@ -52,25 +52,30 @@ Reason: Because we not passed third parameter and set default value to third des
 
 - Implement a function that reverses `"JavaScript"` using the custom `.reverse()` method.  
    Answer:
+
+  ```js
   let str = "Javascript";
-  String.prototype.reverse = function(inputStr) {
-  const resultStr = inputStr.split("").reverse().join("");
-  // console.log(resultStr);
-  return resultStr;
+  String.prototype.reverse = function (inputStr) {
+    const resultStr = inputStr.split("").reverse().join("");
+    // console.log(resultStr);
+    return resultStr;
   };
 
   console.log(str.reverse(str)); // result will be reverse string;
+  ```
 
   second optoin//
 
-  let str = "Javascript";
-  String.prototype.reverse = function () {
+```js
+let str = "Javascript";
+String.prototype.reverse = function () {
   const resultStr = this.split("").reverse().join("");
   // console.log(resultStr);
   return resultStr;
-  };
+};
 
-  console.log(str.reverse()); // result will be reverse string;
+console.log(str.reverse()); // result will be reverse string;
+```
 
 ---
 
@@ -107,11 +112,16 @@ dog.speak();
 
 - Add another method `eat()` in prototype that logs `"Dog is eating"` and call it.
   Answer:
-  Animal.prototype.eat = function() {
-  console.log(this.type, 'makes a eating');
-  }
+
+  ```js
+  Animal.prototype.eat = function () {
+    console.log(this.type, "makes a eating");
+  };
 
   dog.eat();
+  ```
+
+````
 
 ---
 
@@ -127,7 +137,7 @@ const person = {
 
 const greetFn = person.greet;
 greetFn();
-```
+````
 
 - Why does this print `undefined`?
   Answer: because in person.greet this refer to person object but when we are passing it to greetFn then there is direct connection to person so that function will standalone. So when a function is standing alone then it refer to undefined or global object.
@@ -144,15 +154,16 @@ greetFn();
 - Add a method `getDetails()` in both which returns `"title by author"`.
 - Create 2 objects and call the method.
 
+```js
 class Book {
-constructor(title, author) {
-this.title = title;
-this.author = author;
-}
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
+  }
 
-getDetails = function () {
-return `${this.title} by ${this.author}`;
-};
+  getDetails = function () {
+    return `${this.title} by ${this.author}`;
+  };
 }
 
 const obj1 = new Book("One Piece", "ODA");
@@ -160,6 +171,7 @@ const obj2 = new Book("Death Note", "Light Yagami");
 
 console.log(obj1.getDetails());
 console.log(obj2.getDetails());
+```
 
 ---
 
@@ -171,12 +183,15 @@ console.log(obj2.getDetails());
   - `reduce()` → find sum of all elements.
 
 Answer:
+
+```js
 let arr = [1, 2, 3, 4];
 let newarr = arr
 .map((i) => i \* 3)
 .filter((i) => i % 2 == 0)
 .reduce((acc, i) => acc + i);
 console.log(newarr);
+```
 
 ---
 
@@ -185,6 +200,7 @@ console.log(newarr);
 - Create an object representing a `Laptop` using all **5 ways** (Literal, `new Object()`, Constructor, Class, `Object.create()`).
 - Each object should have a property `brand` = `"HP"`.
 
+```js
 // Using Object Literal
 let objLiteral = {
 'brand': 'HP',
@@ -221,6 +237,7 @@ console.log(`Brand name: ${this.brand}, Ram: ${this.ram}, SSD: ${this.ssd}`);
 
 // Using Object.create() Method
 let objCreateMethod = Object.create(objLiteral)
+```
 
 ---
 
