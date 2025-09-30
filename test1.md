@@ -1,8 +1,11 @@
 Question:
 Given the following object, how would you create a deep copy of it so that modifying the nested object in the copy does not affect the original?
+
+```js
 const original = { name: "Alice", address: { city: "Paris", zip: 75000 } };
 
-Answer = const copyOfOriginal = structureClone(original);
+const copyOfOriginal = structureClone(original); //Answer
+```
 
 Question:
 Write a function that reverses a string without using the built-in reverse() method.
@@ -48,6 +51,16 @@ Question:
 How can you create an object with keys dynamically based on an array of strings?
 const keys = ["name", "age", "city"];
 const values = ["Alice", 25, "Paris"];
+
+const obj = {}; // Here we created new object
+
+
+keys.forEach((element, index) => {
+    // here we are adding new key value pairs in obj
+    obj[element] = values[index];
+})
+
+console.log(obj);
 // create an object: { name: "Alice", age: 25, city: "Paris" }
 ```js
 
