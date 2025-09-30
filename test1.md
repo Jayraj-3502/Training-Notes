@@ -35,14 +35,14 @@ console.log(reverseString("JavaScript")); // should print "tpircSavaJ"
 
 Question:
 Given an array of numbers, write a function that returns a new array with only even numbers multiplied by 2 using array methods.
-const numbers = [1, 2, 3, 4, 5, 6];
+
 // expected output: [4, 8, 12]
 
 ````js
+const numbers = [1, 2, 3, 4, 5, 6];
+const newArray = numbers.filter((element) => element%2===0).map((element) => element*2)
 
-const newArray = numbers.filter((element) => {
-    return element%2 == 0;
-})
+console.log(newArray);
 
 
 ``
