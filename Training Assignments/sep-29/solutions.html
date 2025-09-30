@@ -25,14 +25,14 @@
         padding: 5px 20px;
         border-radius: 20px;
         width: fit-content;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
       }
     </style>
     <link rel="stylesheet" href="solution.css" />
   </head>
   <body>
     <!-- **Counter Update with different function** -->
-     Question 1
+    Question 1
     <div class="container">
       <div id="counter-value-container">0</div>
       <div class="button-container">
@@ -58,7 +58,7 @@
     <!-- <hr /> -->
 
     <!-- Timer Decrease button  -->
-     Question 2
+    Question 2
     <div class="container">
       <div id="timerValue">0</div>
       <div class="button-container">
@@ -72,7 +72,7 @@
     <hr />
 
     <!-- Event Deligation -->
-     Question 3
+    Question 3
     <div class="container">
       <div id="deligatedValue">None</div>
       <button id="deligationButtonAdd">Add</button>
@@ -88,7 +88,7 @@
     <hr />
 
     <!-- Form Data  -->
-     Question 4
+    Question 4
     <form action="" class="container" id="formSubmit">
       <input type="text" id="mainInputField" placeholder="Enter Your Name" />
       <p id="peraToReplicateInput">No Content Here....</p>
@@ -98,9 +98,12 @@
     <hr />
 
     <!-- toggle container by changing its display property from none to display and viseversa -->
-     Question 5
+    Question 5
     <div class="container">
-      <div id="toggleContainer" class="toggleContainer"></div>
+      <div class="toggleContainer" style="background-color: white">
+        <div id="toggleContainer" class="toggleContainer"></div>
+      </div>
+
       <br />
       <button id="toggleButton">Display Toggle</button>
     </div>
@@ -108,9 +111,11 @@
     <hr />
 
     <!-- Propogation working -->
-     Question 6
+    Question 6: <br />
+    This is the example of how we can prevent bubbling.
     <div class="container">
       <div id="displayContainer">No One Clicked.</div>
+      <br />
       <div id="outerContainer">
         Outer Container
         <div id="innerContainer">
@@ -123,21 +128,23 @@
     <hr />
 
     <!-- Create and Delete paragraph  -->
-     Question 7
+    Question 7
     <div class="container">
       <div>
         <button id="addPara">Add Paragraph</button>
         <button id="removePara">Remove Pararagraph</button>
       </div>
+      <br />
       <div id="paraCollectionContainer"></div>
     </div>
 
     <hr />
 
     <!-- SetTimeout and setinterval  -->
-     Question 8
+    Question 8
     <div class="container">
       <div id="colorChangingContainer"></div>
+      <button id="startColorChange">Start Color Change</button>
       <button id="stopColorChange">Stop Color Change</button>
       <p id="messageAfterFiveSec">Hello Monkey D Luffy.</p>
     </div>
@@ -145,7 +152,7 @@
     <hr />
 
     <!-- Data-set attribute Color changeing -->
-     Questoin 9
+    Questoin 9
     <div class="container">
       <div id="colorChangingContainer2"></div>
       <button
@@ -171,69 +178,75 @@
       </button>
     </div>
 
-    <hr>
+    <hr />
 
     <!-- Button to increase font size by 2 px  -->
-     Question 10
-     <div class="container">
-        <div id="mainParagraphFont" style="margin-bottom: 10px; font-size: 16px;">This is some sample Text.</div>
-        <button id="increaseFontSize">Increase</button>
-        <button id="decreaseFontSize">Decreaae</button>
-     </div>
-
-     <hr>
-
-     <!-- Age Input Validation -->
-      Question 11
-      <div class="container">
-        <input type="text" id="ageInputField" placeholder="Enter your age" style="margin-bottom: 10px;">
-        <button type="submit" id="ageSubmitButton">Submit</button>
-        <p id="validationMessage"></p>
+    Question 10
+    <div class="container">
+      <div id="mainParagraphFont" style="margin-bottom: 10px; font-size: 16px">
+        This is some sample Text.
       </div>
+      <button id="increaseFontSize">Increase</button>
+      <button id="decreaseFontSize">Decreaae</button>
+    </div>
 
-      <hr>
+    <hr />
 
-      <!-- program to create new text whenever click on button  -->
-       Question 12
-       <div class="container">
-        <p id="paraToChangeWithNewOne">Some Content</p>
-        <button id="newParagraphButton">New Para</button>
-       </div>
+    <!-- Age Input Validation -->
+    Question 11
+    <div class="container">
+      <input
+        type="number"
+        id="ageInputField"
+        placeholder="Enter your age"
+        style="margin-bottom: 10px"
+      />
+      <button type="submit" id="ageSubmitButton">Submit</button>
+      <p id="validationMessage"></p>
+    </div>
 
-       <hr>
+    <hr />
 
-       <!-- Adding Items with Having Number -->
-        Question 13
-        <div class="container">
-            <button id="addItemButtonInContainer">Add Item</button>
-            <ul id="itemContainerToAddItems">
+    <!-- program to create new text whenever click on button  -->
+    Question 12
+    <div class="container">
+      <p id="paraToChangeWithNewOne">Some Content</p>
+      <button id="newParagraphButton">New Para</button>
+    </div>
 
-            </ul>
-            
-        </div>
+    <hr />
 
-        <hr>
+    <!-- Adding Items with Having Number -->
+    Question 13
+    <div class="container">
+      <button id="addItemButtonInContainer">Add Item</button>
+      <ul id="itemContainerToAddItems"></ul>
+    </div>
 
-        <!-- hiding nad showing the element by toggling there elements -->
-         Question 14
-         <div class="container">
-            <div id="toggleContainerHideAndSeak"></div>
-            <button id="hideToggleContainerHideAndSeak">Hide</button>
-            <button id="showToggleContainerHideAndSeak">Show</button>
-         </div>
+    <hr />
 
+    <!-- hiding nad showing the element by toggling there elements -->
+    Question 14
+    <div class="container">
+      <div id="toggleContainerHideAndSeak"></div>
+      <button id="hideToggleContainerHideAndSeak">Hide</button>
+      <button id="showToggleContainerHideAndSeak">Show</button>
+    </div>
 
-         <hr>
+    <hr />
 
-         <!-- Color Changer Button  -->
-          Question 15
-          <div class="container">
-            <div id="colorChangerBoxFor15"></div>
-            <button class="colorChangin15" style="background-color: red">Red</button>
-            <button class="colorChangin15" style="background-color: blue">Blue</button>
-            <button class="colorChangin15" style="background-color: green">Green</button>
-          </div>
-
+    <!-- Color Changer Button  -->
+    Question 15
+    <div class="container">
+      <div id="colorChangerBoxFor15"></div>
+      <button class="colorChangin15" style="background-color: red">Red</button>
+      <button class="colorChangin15" style="background-color: blue">
+        Blue
+      </button>
+      <button class="colorChangin15" style="background-color: green">
+        Green
+      </button>
+    </div>
 
     <script src="./solution.js"></script>
   </body>
