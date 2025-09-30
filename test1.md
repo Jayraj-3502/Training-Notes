@@ -89,30 +89,77 @@ console.log(counter()); // 3
 Question:
 What will be logged to the console and why?
 
+```js
 const obj1 = { a: 1 };
 const obj2 = obj1;
 obj2.a = 2;
 console.log(obj1.a);
+```
+
+Answer: 1
+Reason: Here when we doing obj2 = obj1 at this time we are passing object refrence instead of creating it's copy. Now both have same refrence so once change will reflact in both.
 
 Question:
-Given an array of objects, find all objects where the age is greater than 18.const users = [
-{ name: "Alice", age: 17 },
-{ name: "Bob", age: 20 },
-{ name: "Charlie", age: 15 },
-{ name: "David", age: 25 }
+Given an array of objects, find all objects where the age is greater than 18.
+
+```js
+const users = [
+  { name: "Alice", age: 17 },
+  { name: "Bob", age: 20 },
+  { name: "Charlie", age: 15 },
+  { name: "David", age: 25 },
 ];
+
+const returnArray = users.filter((element) => {
+  let { age } = element;
+  if (age > 18) {
+    return element;
+  }
+});
+
+console.log(returnArray);
+
 // expected output: [{name: "Bob", age: 20}, {name: "David", age: 25}]
+// Explanation: Here i am using filter method to filter out the element based on the condition. In line number 114 we are destructuring the object instead of using dot notaion for best practices.
+```
 
 Question:
-Write a function to capitalize the first letter of each word in a string.function capitalizeWords(str) {
-// your code here
+Write a function to capitalize the first letter of each word in a string.
+
+```js
+function capitalizeWords(str) {
+  // In this code first we conver string into array
+  // then using map function to work on each element of that array
+  // Then conver first character of each word into caps and store it into char
+  // Then concate char and remaning sting except first character and store it into car to form complete word
+  // Then return the new word
+  // finally return string of array using join method
+
+  const divideString = str.split(" ");
+  const newArray = divideString.map((element) => {
+    let char = element[0].toUpperCase();
+    char = char + element.slice(1);
+    return char;
+  });
+
+  return newArray.join(" ");
 }
+
 console.log(capitalizeWords("hello world from js")); // "Hello World From Js"
+```
 
 Question:
-What’s the difference between these two approaches? Which one is shallow and which is deep?const arr = [[1], [2], [3]];
+What’s the difference between these two approaches? Which one is shallow and which is deep?
+
+```js
+const arr = [[1], [2], [3]];
 const copy1 = arr.slice();
 const copy2 = JSON.parse(JSON.stringify(arr));
+
+// copy1 is creating shallow copy because this is default behaviour of js that every method will return shallow copy rather then the methods which which access and return refrence.
+
+// copy2 is creating deep copy because here we are creating deep copy by our selfs not depending on default behaviour.
+```
 
 ```
 
