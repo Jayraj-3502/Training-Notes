@@ -236,7 +236,7 @@ const colorChangingButton = document.querySelectorAll(".colorChangingButton");
 
 colorChangingButton.forEach((element) => {
   element.addEventListener("click", (event) => {
-    colorChangingContainer2.style.backgroundColor = event.target.getAttribute('data-color');
+    colorChangingContainer2.style.backgroundColor = event.target.dataset.color;
     // console.log(event.target.getAttribute('data-color'));
   });
 });
