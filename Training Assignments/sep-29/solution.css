@@ -1,0 +1,45 @@
+/* Counter CSS */
+#counter-value-container {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.toggleContainer {
+  height: 200px;
+  width: 200px;
+  background-color: orange;
+}
+
+#outerContainer {
+  padding: 20px;
+  height: fit-content;
+  width: fit-content;
+  background-color: orange;
+  color: white;
+}
+
+#innerContainer {
+  padding: 20px;
+  height: fit-content;
+  width: fit-content;
+  background-color: red;
+}
+
+#mostInnerContainer {
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+#colorChangingContainer,
+#colorChangingContainer2, #toggleContainerHideAndSeak, #colorChangerBoxFor15 {
+  height: 100px;
+  width: 100px;
+  background-color: orange;
+  margin-bottom: 10px;
+}
+
+#messageAfterFiveSec {
+  display: none;
+}

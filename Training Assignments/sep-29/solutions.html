@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        font-size: 20px;
+      }
+      button {
+        background-color: orange;
+        color: white;
+        padding: 5px 20px;
+        border-radius: 20px;
+        border: none;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .container {
+        margin-bottom: 50px;
+        margin-top: 50px;
+      }
+      li {
+        background-color: orange;
+        color: white;
+        padding: 5px 20px;
+        border-radius: 20px;
+        width: fit-content;
+        margin-bottom: 10px;
+      }
+    </style>
+    <link rel="stylesheet" href="solution.css" />
+  </head>
+  <body>
+    <!-- **Counter Update with different function** -->
+     Question 1
+    <div class="container">
+      <div id="counter-value-container">0</div>
+      <div class="button-container">
+        <button id="counter-increment">Increment</button>
+        <button id="counter-decrement">Decrement</button>
+        <button id="counter-reset">Reset</button>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- **Counter Update with one function** -->
+    <!-- <div class="container">
+      <div id="counterValue">0</div>
+      <div class="button-container">
+        <button class="counterButton">Increment</button>
+        <button class="counterButton">Decrement</button>
+        <button class="counterButton">Reset</button>
+      </div>
+    </div> -->
+
+    <!-- -------------------------- -->
+    <!-- <hr /> -->
+
+    <!-- Timer Decrease button  -->
+     Question 2
+    <div class="container">
+      <div id="timerValue">0</div>
+      <div class="button-container">
+        <button id="timerIncrease">Increasing</button>
+        <button id="timerDecrease">Decreasing</button>
+        <button id="timerStop">Stop</button>
+        <button id="timerReset">Reset</button>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Event Deligation -->
+     Question 3
+    <div class="container">
+      <div id="deligatedValue">None</div>
+      <button id="deligationButtonAdd">Add</button>
+      <ul id="deligatedItemContainer">
+        <li class="deligatedItem">1</li>
+        <li class="deligatedItem">2</li>
+        <li class="deligatedItem">3</li>
+        <li class="deligatedItem">4</li>
+        <li class="deligatedItem">5</li>
+      </ul>
+    </div>
+
+    <hr />
+
+    <!-- Form Data  -->
+     Question 4
+    <form action="" class="container" id="formSubmit">
+      <input type="text" id="mainInputField" placeholder="Enter Your Name" />
+      <p id="peraToReplicateInput">No Content Here....</p>
+      <button type="submit" id="submitButton">Submit</button>
+    </form>
+
+    <hr />
+
+    <!-- toggle container by changing its display property from none to display and viseversa -->
+     Question 5
+    <div class="container">
+      <div id="toggleContainer" class="toggleContainer"></div>
+      <br />
+      <button id="toggleButton">Display Toggle</button>
+    </div>
+
+    <hr />
+
+    <!-- Propogation working -->
+     Question 6
+    <div class="container">
+      <div id="displayContainer">No One Clicked.</div>
+      <div id="outerContainer">
+        Outer Container
+        <div id="innerContainer">
+          Inner Content
+          <div id="mostInnerContainer">Most Inner Content</div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Create and Delete paragraph  -->
+     Question 7
+    <div class="container">
+      <div>
+        <button id="addPara">Add Paragraph</button>
+        <button id="removePara">Remove Pararagraph</button>
+      </div>
+      <div id="paraCollectionContainer"></div>
+    </div>
+
+    <hr />
+
+    <!-- SetTimeout and setinterval  -->
+     Question 8
+    <div class="container">
+      <div id="colorChangingContainer"></div>
+      <button id="stopColorChange">Stop Color Change</button>
+      <p id="messageAfterFiveSec">Hello Monkey D Luffy.</p>
+    </div>
+
+    <hr />
+
+    <!-- Data-set attribute Color changeing -->
+     Questoin 9
+    <div class="container">
+      <div id="colorChangingContainer2"></div>
+      <button
+        class="colorChangingButton"
+        data-color="red"
+        style="background-color: red"
+      >
+        Red
+      </button>
+      <button
+        class="colorChangingButton"
+        data-color="blue"
+        style="background-color: blue"
+      >
+        Blue
+      </button>
+      <button
+        class="colorChangingButton"
+        data-color="green"
+        style="background-color: green"
+      >
+        Green
+      </button>
+    </div>
+
+    <hr>
+
+    <!-- Button to increase font size by 2 px  -->
+     Question 10
+     <div class="container">
+        <div id="mainParagraphFont" style="margin-bottom: 10px; font-size: 16px;">This is some sample Text.</div>
+        <button id="increaseFontSize">Increase</button>
+        <button id="decreaseFontSize">Decreaae</button>
+     </div>
+
+     <hr>
+
+     <!-- Age Input Validation -->
+      Question 11
+      <div class="container">
+        <input type="text" id="ageInputField" placeholder="Enter your age" style="margin-bottom: 10px;">
+        <button type="submit" id="ageSubmitButton">Submit</button>
+        <p id="validationMessage"></p>
+      </div>
+
+      <hr>
+
+      <!-- program to create new text whenever click on button  -->
+       Question 12
+       <div class="container">
+        <p id="paraToChangeWithNewOne">Some Content</p>
+        <button id="newParagraphButton">New Para</button>
+       </div>
+
+       <hr>
+
+       <!-- Adding Items with Having Number -->
+        Question 13
+        <div class="container">
+            <button id="addItemButtonInContainer">Add Item</button>
+            <ul id="itemContainerToAddItems">
+
+            </ul>
+            
+        </div>
+
+        <hr>
+
+        <!-- hiding nad showing the element by toggling there elements -->
+         Question 14
+         <div class="container">
+            <div id="toggleContainerHideAndSeak"></div>
+            <button id="hideToggleContainerHideAndSeak">Hide</button>
+            <button id="showToggleContainerHideAndSeak">Show</button>
+         </div>
+
+
+         <hr>
+
+         <!-- Color Changer Button  -->
+          Question 15
+          <div class="container">
+            <div id="colorChangerBoxFor15"></div>
+            <button class="colorChangin15" style="background-color: red">Red</button>
+            <button class="colorChangin15" style="background-color: blue">Blue</button>
+            <button class="colorChangin15" style="background-color: green">Green</button>
+          </div>
+
+
+    <script src="./solution.js"></script>
+  </body>
+</html>
