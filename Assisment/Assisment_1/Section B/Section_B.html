@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <p class="msg">This is Message.</p>
+      <button id="btn">Click Me</button>
+      <button id="btnReset">Reset Button</button>
+    </div>
+
+    <script>
+      const btn = document.getElementById("btn");
+      const msg = document.querySelector(".msg");
+      const btnReset = document.querySelector("#btnReset");
+
+      btn.addEventListener("click", () => {
+        console.log("Clicked");
+        msg.textContent = "Button Clicked!";
+      });
+
+      btnReset.addEventListener("click", () => {
+        msg.textContent = "This is Message.";
+      });
+    </script>
+  </body>
+</html>

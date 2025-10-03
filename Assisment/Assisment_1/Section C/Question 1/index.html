@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 1</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="w-full h-screen p-10 flex justify-center align-center">
+    <div class="container w-fit flex flex-col gap-10">
+      <div id="inputContainer" class="flex border w-fit rounded-full border">
+        <input
+          type="text"
+          placeholder="Enter Task"
+          id="taskInputField"
+          class="w-max-[200px] outline-none px-5 py-2"
+        />
+        <button
+          id="addTask"
+          class="bg-blue-900 text-white font-bold px-5 py-2 rounded-r-full"
+        >
+          Add Task
+        </button>
+      </div>
+
+      <div id="taskListContainer" on>
+        <div class="listItem border px-2">This is task.</div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
