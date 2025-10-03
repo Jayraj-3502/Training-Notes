@@ -25,7 +25,7 @@ function addChild() {
 
 function createListChild() {
   const div = document.createElement("div");
-  div.className = "listItem";
+  div.className = "listItem px-2 py-2 border-b";
   div.textContent = currentValue;
   return div;
 }
