@@ -4,3 +4,5 @@ const arr = [
   { name: "zac", marks: [{ math: 10, eng: 40 }] },
   { name: "den", marks: [{ math: 20, eng: 10 }] },
 ];
+
+function updateData(queryArr, char, subArray) {}
